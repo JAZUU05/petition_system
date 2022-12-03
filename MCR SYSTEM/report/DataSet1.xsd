@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="petition_record" msprop:Generator_TableClassName="petition_recordDataTable" msprop:Generator_TableVarName="tablepetition_record" msprop:Generator_TablePropName="petition_record" msprop:Generator_RowDeletingName="petition_recordRowDeleting" msprop:Generator_RowChangingName="petition_recordRowChanging" msprop:Generator_RowEvHandlerName="petition_recordRowChangeEventHandler" msprop:Generator_RowDeletedName="petition_recordRowDeleted" msprop:Generator_UserTableName="petition_record" msprop:Generator_RowChangedName="petition_recordRowChanged" msprop:Generator_RowEvArgName="petition_recordRowChangeEvent" msprop:Generator_RowClassName="petition_recordRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="doc_owner" msprop:Generator_ColumnVarNameInTable="columndoc_owner" msprop:Generator_ColumnPropNameInRow="doc_owner" msprop:Generator_ColumnPropNameInTable="doc_ownerColumn" msprop:Generator_UserColumnName="doc_owner" type="xs:string" minOccurs="0" />
+              <xs:element name="year" msprop:Generator_ColumnVarNameInTable="columnyear" msprop:Generator_ColumnPropNameInRow="year" msprop:Generator_ColumnPropNameInTable="yearColumn" msprop:Generator_UserColumnName="year" type="xs:string" minOccurs="0" />
+              <xs:element name="ra" msprop:Generator_ColumnVarNameInTable="columnra" msprop:Generator_ColumnPropNameInRow="ra" msprop:Generator_ColumnPropNameInTable="raColumn" msprop:Generator_UserColumnName="ra" type="xs:string" minOccurs="0" />
+              <xs:element name="petition_num" msprop:Generator_ColumnVarNameInTable="columnpetition_num" msprop:Generator_ColumnPropNameInRow="petition_num" msprop:Generator_ColumnPropNameInTable="petition_numColumn" msprop:Generator_UserColumnName="petition_num" type="xs:string" minOccurs="0" />
+              <xs:element name="type_doc" msprop:Generator_ColumnVarNameInTable="columntype_doc" msprop:Generator_ColumnPropNameInRow="type_doc" msprop:Generator_ColumnPropNameInTable="type_docColumn" msprop:Generator_UserColumnName="type_doc" type="xs:string" minOccurs="0" />
+              <xs:element name="year_final" msprop:Generator_ColumnVarNameInTable="columnyear_final" msprop:Generator_ColumnPropNameInRow="year_final" msprop:Generator_ColumnPropNameInTable="year_finalColumn" msprop:Generator_UserColumnName="year_final" type="xs:string" minOccurs="0" />
+              <xs:element name="cert_from" msprop:Generator_ColumnVarNameInTable="columncert_from" msprop:Generator_ColumnPropNameInRow="cert_from" msprop:Generator_ColumnPropNameInTable="cert_fromColumn" msprop:Generator_UserColumnName="cert_from" type="xs:string" minOccurs="0" />
+              <xs:element name="cert_to" msprop:Generator_ColumnVarNameInTable="columncert_to" msprop:Generator_ColumnPropNameInRow="cert_to" msprop:Generator_ColumnPropNameInTable="cert_toColumn" msprop:Generator_UserColumnName="cert_to" type="xs:string" minOccurs="0" />
+              <xs:element name="petition_label" msprop:Generator_ColumnVarNameInTable="columnpetition_label" msprop:Generator_ColumnPropNameInRow="petition_label" msprop:Generator_ColumnPropNameInTable="petition_labelColumn" msprop:Generator_UserColumnName="petition_label" type="xs:string" minOccurs="0" />
+              <xs:element name="head_name" msprop:Generator_ColumnVarNameInTable="columnhead_name" msprop:Generator_ColumnPropNameInRow="head_name" msprop:Generator_ColumnPropNameInTable="head_nameColumn" msprop:Generator_UserColumnName="head_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="correction" msprop:Generator_TableClassName="correctionDataTable" msprop:Generator_TableVarName="tablecorrection" msprop:Generator_TablePropName="correction" msprop:Generator_RowDeletingName="correctionRowDeleting" msprop:Generator_RowChangingName="correctionRowChanging" msprop:Generator_RowEvHandlerName="correctionRowChangeEventHandler" msprop:Generator_RowDeletedName="correctionRowDeleted" msprop:Generator_UserTableName="correction" msprop:Generator_RowChangedName="correctionRowChanged" msprop:Generator_RowEvArgName="correctionRowChangeEvent" msprop:Generator_RowClassName="correctionRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cce" msprop:Generator_ColumnVarNameInTable="columncce" msprop:Generator_ColumnPropNameInRow="cce" msprop:Generator_ColumnPropNameInTable="cceColumn" msprop:Generator_UserColumnName="cce" type="xs:string" minOccurs="0" />
+              <xs:element name="cfn" msprop:Generator_ColumnVarNameInTable="columncfn" msprop:Generator_ColumnPropNameInRow="cfn" msprop:Generator_ColumnPropNameInTable="cfnColumn" msprop:Generator_UserColumnName="cfn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
