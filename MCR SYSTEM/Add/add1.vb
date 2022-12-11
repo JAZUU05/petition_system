@@ -80,23 +80,23 @@ Public Class add1
 
             If txtDocOw.Text = "" Then
                 MsgBox("Some Fields Cannot be Empty")
-                Label15.Visible = True
+
             ElseIf txtNamePet.Text = "" Then
                 MsgBox("Some Fields Cannot be Empty")
-                Label14.Visible = True
+
             ElseIf year.Text = "" Then
                 MsgBox("Some Fields Cannot be Empty")
-                Label12.Visible = True
+
             ElseIf ra.Text = "" Then
                 MsgBox("Some Fields Cannot be Empty")
-                Label13.Visible = True
+
 
 
             Else
                 If txtyear.Enabled = True Then
                     If txtyear.Text = "" Then
                         MsgBox("Some Fields Cannot be Empty")
-                        Label10.Visible = True
+
                     Else
 
 
