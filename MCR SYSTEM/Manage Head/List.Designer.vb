@@ -107,6 +107,7 @@ Partial Class List
         Me.Controls.Add(Me.btnupdate)
         Me.Controls.Add(Me.txtname)
         Me.Controls.Add(Me.DataGridView1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

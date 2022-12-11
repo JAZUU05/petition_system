@@ -28,6 +28,17 @@ Partial Class add1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(add1))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.gbInsert = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.cbolabel = New System.Windows.Forms.ComboBox()
@@ -67,17 +78,6 @@ Partial Class add1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbInsert.SuspendLayout()
@@ -131,6 +131,94 @@ Partial Class add1
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(1112, 288)
         Me.DataGridView1.TabIndex = 4
+        '
+        'Column10
+        '
+        Me.Column10.DataPropertyName = "petition_id"
+        Me.Column10.HeaderText = "PETITION ID"
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
+        Me.Column10.Width = 126
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "petition"
+        Me.Column1.HeaderText = "PETITION NUMBER"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 178
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "ra"
+        Me.Column2.HeaderText = "RA"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 59
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "doc_owner"
+        Me.Column3.HeaderText = "DOC OWNER"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 131
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "gender"
+        Me.Column4.HeaderText = "GENDER"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Width = 110
+        '
+        'Column5
+        '
+        Me.Column5.DataPropertyName = "name_of_petitioner"
+        Me.Column5.HeaderText = "NAME OF PETITIONER"
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        Me.Column5.Width = 203
+        '
+        'Column6
+        '
+        Me.Column6.DataPropertyName = "type_doc"
+        Me.Column6.HeaderText = "TYPE OF DOCUMENT"
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        Me.Column6.Width = 193
+        '
+        'Column7
+        '
+        Me.Column7.DataPropertyName = "municipality"
+        Me.Column7.HeaderText = "MUNICIPALITY"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
+        Me.Column7.Width = 158
+        '
+        'Column8
+        '
+        Me.Column8.DataPropertyName = "province"
+        Me.Column8.HeaderText = "PROVINCE"
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        Me.Column8.Width = 125
+        '
+        'Column9
+        '
+        Me.Column9.DataPropertyName = "certificate"
+        Me.Column9.HeaderText = "CERTIFICATES"
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        Me.Column9.Width = 162
+        '
+        'Column11
+        '
+        Me.Column11.DataPropertyName = "year_final"
+        Me.Column11.HeaderText = "Finality Year"
+        Me.Column11.Name = "Column11"
+        Me.Column11.ReadOnly = True
+        Me.Column11.Width = 123
         '
         'gbInsert
         '
@@ -546,94 +634,6 @@ Partial Class add1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
-        'Column10
-        '
-        Me.Column10.DataPropertyName = "petition_id"
-        Me.Column10.HeaderText = "PETITION ID"
-        Me.Column10.Name = "Column10"
-        Me.Column10.ReadOnly = True
-        Me.Column10.Width = 126
-        '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "petition"
-        Me.Column1.HeaderText = "PETITION NUMBER"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 178
-        '
-        'Column2
-        '
-        Me.Column2.DataPropertyName = "ra"
-        Me.Column2.HeaderText = "RA"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 59
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "doc_owner"
-        Me.Column3.HeaderText = "DOC OWNER"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 131
-        '
-        'Column4
-        '
-        Me.Column4.DataPropertyName = "gender"
-        Me.Column4.HeaderText = "GENDER"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 110
-        '
-        'Column5
-        '
-        Me.Column5.DataPropertyName = "name_of_petitioner"
-        Me.Column5.HeaderText = "NAME OF PETITIONER"
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 203
-        '
-        'Column6
-        '
-        Me.Column6.DataPropertyName = "type_doc"
-        Me.Column6.HeaderText = "TYPE OF DOCUMENT"
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        Me.Column6.Width = 193
-        '
-        'Column7
-        '
-        Me.Column7.DataPropertyName = "municipality"
-        Me.Column7.HeaderText = "MUNICIPALITY"
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        Me.Column7.Width = 158
-        '
-        'Column8
-        '
-        Me.Column8.DataPropertyName = "province"
-        Me.Column8.HeaderText = "PROVINCE"
-        Me.Column8.Name = "Column8"
-        Me.Column8.ReadOnly = True
-        Me.Column8.Width = 125
-        '
-        'Column9
-        '
-        Me.Column9.DataPropertyName = "certificate"
-        Me.Column9.HeaderText = "CERTIFICATES"
-        Me.Column9.Name = "Column9"
-        Me.Column9.ReadOnly = True
-        Me.Column9.Width = 162
-        '
-        'Column11
-        '
-        Me.Column11.DataPropertyName = "year_final"
-        Me.Column11.HeaderText = "Finality Year"
-        Me.Column11.Name = "Column11"
-        Me.Column11.ReadOnly = True
-        Me.Column11.Width = 123
-        '
         'add1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -643,6 +643,7 @@ Partial Class add1
         Me.CausesValidation = False
         Me.ClientSize = New System.Drawing.Size(1120, 647)
         Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False

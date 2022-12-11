@@ -84,7 +84,7 @@ Partial Class edit_form
         Me.Label9.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(149, 79)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 16)
+        Me.Label9.Size = New System.Drawing.Size(38, 16)
         Me.Label9.TabIndex = 46
         Me.Label9.Text = "Year"
         '
@@ -102,7 +102,7 @@ Partial Class edit_form
         Me.Label8.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(314, 79)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(33, 16)
+        Me.Label8.Size = New System.Drawing.Size(32, 16)
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "RA."
         '
@@ -120,7 +120,7 @@ Partial Class edit_form
         Me.fin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.fin.Location = New System.Drawing.Point(25, 98)
         Me.fin.Name = "fin"
-        Me.fin.Size = New System.Drawing.Size(69, 20)
+        Me.fin.Size = New System.Drawing.Size(68, 20)
         Me.fin.TabIndex = 40
         Me.fin.Text = "Finality"
         Me.fin.UseVisualStyleBackColor = True
@@ -173,7 +173,7 @@ Partial Class edit_form
         Me.auth.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.auth.Location = New System.Drawing.Point(25, 68)
         Me.auth.Name = "auth"
-        Me.auth.Size = New System.Drawing.Size(94, 20)
+        Me.auth.Size = New System.Drawing.Size(93, 20)
         Me.auth.TabIndex = 39
         Me.auth.Text = "Authenticity"
         Me.auth.UseVisualStyleBackColor = True
@@ -184,7 +184,7 @@ Partial Class edit_form
         Me.cert_post.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cert_post.Location = New System.Drawing.Point(25, 37)
         Me.cert_post.Name = "cert_post"
-        Me.cert_post.Size = New System.Drawing.Size(150, 20)
+        Me.cert_post.Size = New System.Drawing.Size(149, 20)
         Me.cert_post.TabIndex = 38
         Me.cert_post.Text = "Certificate Of Posting"
         Me.cert_post.UseVisualStyleBackColor = True
@@ -204,7 +204,7 @@ Partial Class edit_form
         Me.rbFemale.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbFemale.Location = New System.Drawing.Point(264, 233)
         Me.rbFemale.Name = "rbFemale"
-        Me.rbFemale.Size = New System.Drawing.Size(72, 20)
+        Me.rbFemale.Size = New System.Drawing.Size(71, 20)
         Me.rbFemale.TabIndex = 32
         Me.rbFemale.TabStop = True
         Me.rbFemale.Text = "Female"
@@ -216,7 +216,7 @@ Partial Class edit_form
         Me.rbMale.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbMale.Location = New System.Drawing.Point(186, 233)
         Me.rbMale.Name = "rbMale"
-        Me.rbMale.Size = New System.Drawing.Size(56, 20)
+        Me.rbMale.Size = New System.Drawing.Size(55, 20)
         Me.rbMale.TabIndex = 31
         Me.rbMale.TabStop = True
         Me.rbMale.Text = "Male"
@@ -237,7 +237,7 @@ Partial Class edit_form
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1120, 381)
+        Me.Panel1.Size = New System.Drawing.Size(1089, 381)
         Me.Panel1.TabIndex = 1
         '
         'gbInsert
@@ -266,10 +266,11 @@ Partial Class edit_form
         Me.gbInsert.Controls.Add(Me.Label3)
         Me.gbInsert.Controls.Add(Me.Label2)
         Me.gbInsert.Controls.Add(Me.Label1)
+        Me.gbInsert.Dock = System.Windows.Forms.DockStyle.Fill
         Me.gbInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.gbInsert.Location = New System.Drawing.Point(3, 0)
+        Me.gbInsert.Location = New System.Drawing.Point(0, 0)
         Me.gbInsert.Name = "gbInsert"
-        Me.gbInsert.Size = New System.Drawing.Size(1117, 388)
+        Me.gbInsert.Size = New System.Drawing.Size(1089, 381)
         Me.gbInsert.TabIndex = 3
         Me.gbInsert.TabStop = False
         '
@@ -322,7 +323,7 @@ Partial Class edit_form
         Me.Label7.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(16, 198)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(158, 16)
+        Me.Label7.Size = New System.Drawing.Size(157, 16)
         Me.Label7.TabIndex = 24
         Me.Label7.Text = "TYPE OF DOCUMENT"
         '
@@ -332,7 +333,7 @@ Partial Class edit_form
         Me.Label6.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(564, 33)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(152, 16)
+        Me.Label6.Size = New System.Drawing.Size(151, 16)
         Me.Label6.TabIndex = 23
         Me.Label6.Text = "MUNICIPALITY/CITY"
         '
@@ -342,7 +343,7 @@ Partial Class edit_form
         Me.Label5.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(564, 80)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 16)
+        Me.Label5.Size = New System.Drawing.Size(84, 16)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "PROVINCE"
         '
@@ -352,7 +353,7 @@ Partial Class edit_form
         Me.Label4.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(14, 160)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(168, 16)
+        Me.Label4.Size = New System.Drawing.Size(167, 16)
         Me.Label4.TabIndex = 21
         Me.Label4.Text = "NAME OF PETITIONER"
         '
@@ -362,7 +363,7 @@ Partial Class edit_form
         Me.Label3.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(23, 235)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 16)
+        Me.Label3.Size = New System.Drawing.Size(69, 16)
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "GENDER"
         '
@@ -372,7 +373,7 @@ Partial Class edit_form
         Me.Label2.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(14, 119)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(152, 16)
+        Me.Label2.Size = New System.Drawing.Size(151, 16)
         Me.Label2.TabIndex = 19
         Me.Label2.Text = "DOCUMENT OWNER"
         '
@@ -382,7 +383,7 @@ Partial Class edit_form
         Me.Label1.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(14, 38)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 16)
+        Me.Label1.Size = New System.Drawing.Size(106, 16)
         Me.Label1.TabIndex = 18
         Me.Label1.Text = "PETITION NO."
         '
@@ -391,9 +392,9 @@ Partial Class edit_form
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(1120, 381)
+        Me.ClientSize = New System.Drawing.Size(1089, 381)
         Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.ImeMode = System.Windows.Forms.ImeMode.Alpha
         Me.MaximizeBox = False

@@ -44,8 +44,11 @@ Partial Class cert_auth
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1036, 499)
         Me.Controls.Add(Me.CrystalReportViewer1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "cert_auth"
         Me.Text = "cert_auth"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
