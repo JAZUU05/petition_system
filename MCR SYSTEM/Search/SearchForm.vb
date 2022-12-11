@@ -81,19 +81,6 @@ Public Class SearchForm
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles btnedit.Click
-        sql = "INSERT INTO recent_activity (petition_id) VALUES (@pet_id)"
-        Try
-            con.Open()
-            With cmd
-                .CommandText = sql
-                .Connection = con
-                .Parameters.Add("@pet_id", MySqlDbType.VarChar).Value = DataGridView2.CurrentRow.Cells(0).Value
-                .ExecuteNonQuery()
-            End With
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-        con.Close()
 
         With edit_form
             Me.Close()

@@ -28,17 +28,6 @@ Partial Class add1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(add1))
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.gbInsert = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.cbolabel = New System.Windows.Forms.ComboBox()
@@ -78,6 +67,17 @@ Partial Class add1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.gbInsert.SuspendLayout()
@@ -88,27 +88,26 @@ Partial Class add1
         '
         'Panel1
         '
-        Me.Panel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.AutoScroll = True
         Me.Panel1.AutoSize = True
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Controls.Add(Me.gbInsert)
         Me.Panel1.Controls.Add(Me.btnSave)
         Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1118, 640)
+        Me.Panel1.Size = New System.Drawing.Size(1120, 647)
         Me.Panel1.TabIndex = 0
         '
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells
-        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells
-        Me.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised
+        Me.DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.Transparent
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -133,96 +132,10 @@ Partial Class add1
         Me.DataGridView1.Size = New System.Drawing.Size(1112, 288)
         Me.DataGridView1.TabIndex = 4
         '
-        'Column10
-        '
-        Me.Column10.DataPropertyName = "petition_id"
-        Me.Column10.HeaderText = "petition_id"
-        Me.Column10.Name = "Column10"
-        Me.Column10.ReadOnly = True
-        Me.Column10.Width = 118
-        '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "petition"
-        Me.Column1.HeaderText = "PETITION NUMBER"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        Me.Column1.Width = 177
-        '
-        'Column2
-        '
-        Me.Column2.DataPropertyName = "ra"
-        Me.Column2.HeaderText = "RA"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        Me.Column2.Width = 59
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "doc_owner"
-        Me.Column3.HeaderText = "DOC OWNER"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 131
-        '
-        'Column4
-        '
-        Me.Column4.DataPropertyName = "gender"
-        Me.Column4.HeaderText = "GENDER"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 110
-        '
-        'Column5
-        '
-        Me.Column5.DataPropertyName = "name_of_petitioner"
-        Me.Column5.HeaderText = "NAME OF PETITIONER"
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 203
-        '
-        'Column6
-        '
-        Me.Column6.DataPropertyName = "type_doc"
-        Me.Column6.HeaderText = "TYPE OF DOCUMENT"
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        Me.Column6.Width = 193
-        '
-        'Column7
-        '
-        Me.Column7.DataPropertyName = "municipality"
-        Me.Column7.HeaderText = "MUNICIPALITY"
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        Me.Column7.Width = 158
-        '
-        'Column8
-        '
-        Me.Column8.DataPropertyName = "province"
-        Me.Column8.HeaderText = "PROVINCE"
-        Me.Column8.Name = "Column8"
-        Me.Column8.ReadOnly = True
-        Me.Column8.Width = 125
-        '
-        'Column9
-        '
-        Me.Column9.DataPropertyName = "certificate"
-        Me.Column9.HeaderText = "CERTIFICATES"
-        Me.Column9.Name = "Column9"
-        Me.Column9.ReadOnly = True
-        Me.Column9.Width = 162
-        '
-        'Column11
-        '
-        Me.Column11.DataPropertyName = "year_final"
-        Me.Column11.HeaderText = "Finality Year"
-        Me.Column11.Name = "Column11"
-        Me.Column11.ReadOnly = True
-        Me.Column11.Width = 123
-        '
         'gbInsert
         '
+        Me.gbInsert.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gbInsert.Controls.Add(Me.GroupBox2)
         Me.gbInsert.Controls.Add(Me.GroupBox1)
         Me.gbInsert.Controls.Add(Me.txtprov)
@@ -232,7 +145,7 @@ Partial Class add1
         Me.gbInsert.Controls.Add(Me.Label6)
         Me.gbInsert.Controls.Add(Me.Label5)
         Me.gbInsert.Controls.Add(Me.Label3)
-        Me.gbInsert.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.gbInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.gbInsert.Location = New System.Drawing.Point(3, 0)
         Me.gbInsert.Name = "gbInsert"
         Me.gbInsert.Size = New System.Drawing.Size(1112, 291)
@@ -335,12 +248,13 @@ Partial Class add1
         Me.Label9.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(140, 64)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 16)
+        Me.Label9.Size = New System.Drawing.Size(38, 16)
         Me.Label9.TabIndex = 64
         Me.Label9.Text = "Year"
         '
         'year
         '
+        Me.year.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.year.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.year.Location = New System.Drawing.Point(180, 60)
         Me.year.Name = "year"
@@ -353,12 +267,13 @@ Partial Class add1
         Me.Label8.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(305, 64)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(33, 16)
+        Me.Label8.Size = New System.Drawing.Size(32, 16)
         Me.Label8.TabIndex = 62
         Me.Label8.Text = "RA."
         '
         'ra
         '
+        Me.ra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ra.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ra.Location = New System.Drawing.Point(344, 60)
         Me.ra.Name = "ra"
@@ -367,6 +282,7 @@ Partial Class add1
         '
         'txtNamePet
         '
+        Me.txtNamePet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtNamePet.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtNamePet.Location = New System.Drawing.Point(179, 140)
         Me.txtNamePet.Name = "txtNamePet"
@@ -375,6 +291,7 @@ Partial Class add1
         '
         'txtDocOw
         '
+        Me.txtDocOw.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtDocOw.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDocOw.Location = New System.Drawing.Point(179, 100)
         Me.txtDocOw.Name = "txtDocOw"
@@ -383,6 +300,7 @@ Partial Class add1
         '
         'txtPet
         '
+        Me.txtPet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPet.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPet.Location = New System.Drawing.Point(273, 17)
         Me.txtPet.Name = "txtPet"
@@ -395,7 +313,7 @@ Partial Class add1
         Me.Label7.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(7, 183)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(158, 16)
+        Me.Label7.Size = New System.Drawing.Size(157, 16)
         Me.Label7.TabIndex = 56
         Me.Label7.Text = "TYPE OF DOCUMENT"
         '
@@ -405,7 +323,7 @@ Partial Class add1
         Me.Label4.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(5, 145)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(168, 16)
+        Me.Label4.Size = New System.Drawing.Size(167, 16)
         Me.Label4.TabIndex = 55
         Me.Label4.Text = "NAME OF PETITIONER"
         '
@@ -415,7 +333,7 @@ Partial Class add1
         Me.Label2.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(5, 104)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(152, 16)
+        Me.Label2.Size = New System.Drawing.Size(151, 16)
         Me.Label2.TabIndex = 54
         Me.Label2.Text = "DOCUMENT OWNER"
         '
@@ -425,7 +343,7 @@ Partial Class add1
         Me.Label1.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(5, 23)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 16)
+        Me.Label1.Size = New System.Drawing.Size(106, 16)
         Me.Label1.TabIndex = 53
         Me.Label1.Text = "PETITION NO."
         '
@@ -447,6 +365,7 @@ Partial Class add1
         '
         'txtto
         '
+        Me.txtto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtto.Enabled = False
         Me.txtto.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtto.Location = New System.Drawing.Point(341, 38)
@@ -456,6 +375,7 @@ Partial Class add1
         '
         'txtfrom
         '
+        Me.txtfrom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtfrom.Enabled = False
         Me.txtfrom.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtfrom.Location = New System.Drawing.Point(178, 39)
@@ -476,6 +396,7 @@ Partial Class add1
         '
         'txtyear
         '
+        Me.txtyear.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtyear.Enabled = False
         Me.txtyear.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtyear.Location = New System.Drawing.Point(178, 95)
@@ -518,6 +439,7 @@ Partial Class add1
         '
         'txtprov
         '
+        Me.txtprov.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtprov.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtprov.Location = New System.Drawing.Point(775, 73)
         Me.txtprov.Name = "txtprov"
@@ -530,7 +452,7 @@ Partial Class add1
         Me.rbFemale.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbFemale.Location = New System.Drawing.Point(264, 233)
         Me.rbFemale.Name = "rbFemale"
-        Me.rbFemale.Size = New System.Drawing.Size(70, 20)
+        Me.rbFemale.Size = New System.Drawing.Size(69, 20)
         Me.rbFemale.TabIndex = 32
         Me.rbFemale.TabStop = True
         Me.rbFemale.Text = "Female"
@@ -542,7 +464,7 @@ Partial Class add1
         Me.rbMale.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rbMale.Location = New System.Drawing.Point(188, 233)
         Me.rbMale.Name = "rbMale"
-        Me.rbMale.Size = New System.Drawing.Size(55, 20)
+        Me.rbMale.Size = New System.Drawing.Size(54, 20)
         Me.rbMale.TabIndex = 31
         Me.rbMale.TabStop = True
         Me.rbMale.Text = "Male"
@@ -550,6 +472,7 @@ Partial Class add1
         '
         'txtMun
         '
+        Me.txtMun.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtMun.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMun.Location = New System.Drawing.Point(775, 25)
         Me.txtMun.Name = "txtMun"
@@ -562,7 +485,7 @@ Partial Class add1
         Me.Label6.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(603, 30)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(152, 16)
+        Me.Label6.Size = New System.Drawing.Size(151, 16)
         Me.Label6.TabIndex = 23
         Me.Label6.Text = "MUNICIPALITY/CITY"
         '
@@ -572,7 +495,7 @@ Partial Class add1
         Me.Label5.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(603, 77)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(85, 16)
+        Me.Label5.Size = New System.Drawing.Size(84, 16)
         Me.Label5.TabIndex = 22
         Me.Label5.Text = "PROVINCE"
         '
@@ -582,15 +505,18 @@ Partial Class add1
         Me.Label3.Font = New System.Drawing.Font("Century Schoolbook", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(23, 235)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(70, 16)
+        Me.Label3.Size = New System.Drawing.Size(69, 16)
         Me.Label3.TabIndex = 20
         Me.Label3.Text = "GENDER"
         '
         'btnSave
         '
+        Me.btnSave.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnSave.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnSave.BackColor = System.Drawing.Color.Gray
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnSave.FlatAppearance.BorderSize = 0
+        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.Font = New System.Drawing.Font("Century Schoolbook", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.ForeColor = System.Drawing.SystemColors.Control
         Me.btnSave.Location = New System.Drawing.Point(927, 297)
@@ -620,6 +546,94 @@ Partial Class add1
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
+        'Column10
+        '
+        Me.Column10.DataPropertyName = "petition_id"
+        Me.Column10.HeaderText = "PETITION ID"
+        Me.Column10.Name = "Column10"
+        Me.Column10.ReadOnly = True
+        Me.Column10.Width = 126
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "petition"
+        Me.Column1.HeaderText = "PETITION NUMBER"
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        Me.Column1.Width = 178
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "ra"
+        Me.Column2.HeaderText = "RA"
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        Me.Column2.Width = 59
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "doc_owner"
+        Me.Column3.HeaderText = "DOC OWNER"
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        Me.Column3.Width = 131
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "gender"
+        Me.Column4.HeaderText = "GENDER"
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        Me.Column4.Width = 110
+        '
+        'Column5
+        '
+        Me.Column5.DataPropertyName = "name_of_petitioner"
+        Me.Column5.HeaderText = "NAME OF PETITIONER"
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        Me.Column5.Width = 203
+        '
+        'Column6
+        '
+        Me.Column6.DataPropertyName = "type_doc"
+        Me.Column6.HeaderText = "TYPE OF DOCUMENT"
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        Me.Column6.Width = 193
+        '
+        'Column7
+        '
+        Me.Column7.DataPropertyName = "municipality"
+        Me.Column7.HeaderText = "MUNICIPALITY"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
+        Me.Column7.Width = 158
+        '
+        'Column8
+        '
+        Me.Column8.DataPropertyName = "province"
+        Me.Column8.HeaderText = "PROVINCE"
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        Me.Column8.Width = 125
+        '
+        'Column9
+        '
+        Me.Column9.DataPropertyName = "certificate"
+        Me.Column9.HeaderText = "CERTIFICATES"
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        Me.Column9.Width = 162
+        '
+        'Column11
+        '
+        Me.Column11.DataPropertyName = "year_final"
+        Me.Column11.HeaderText = "Finality Year"
+        Me.Column11.Name = "Column11"
+        Me.Column11.ReadOnly = True
+        Me.Column11.Width = 123
+        '
         'add1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -629,7 +643,6 @@ Partial Class add1
         Me.CausesValidation = False
         Me.ClientSize = New System.Drawing.Size(1120, 647)
         Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -670,17 +683,6 @@ Partial Class add1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents txtyear As TextBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents Column10 As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column9 As DataGridViewTextBoxColumn
-    Friend WithEvents Column11 As DataGridViewTextBoxColumn
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
@@ -702,4 +704,15 @@ Partial Class add1
     Friend WithEvents cbolabel As ComboBox
     Friend WithEvents txtto As TextBox
     Friend WithEvents txtfrom As TextBox
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
 End Class
