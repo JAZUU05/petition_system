@@ -161,7 +161,6 @@ Public Class edit_form
             .Parameters.Add("@year_final", MySqlDbType.VarChar).Value = txtyear.Text
             Dim res As String = .ExecuteNonQuery
             If res > 0 Then
-                MsgBox("Record Updated", MsgBoxStyle.Information, "Record Updated")
 
 
                 For Each ctrl As Control In gbInsert.Controls

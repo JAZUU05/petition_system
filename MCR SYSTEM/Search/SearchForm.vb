@@ -101,8 +101,6 @@ Public Class SearchForm
             OR gender LIKE '%" & txtSearch.Text & "%' OR name_of_petitioner LIKE '%" & txtSearch.Text & "%' OR type_doc LIKE '%" & txtSearch.Text & "%' OR municipality LIKE '%" & txtSearch.Text & "%' 
             OR province LIKE '%" & txtSearch.Text & "%' OR certificate LIKE '%" & txtSearch.Text & "%' OR ra LIKE '%" & txtSearch.Text & "%')  AND (type_doc = '" & type.Trim & "') AND (petition_label LIKE '%" & pet_num & "%') ORDER BY petition_id DESC"
 
-        'sql = "SELECT petition_num, doc_owner, gender, name_of_petitioner, type_doc,municipality, province 
-        '      FROM petition_record WHERE petition_num LIKE '%" & txtSearch.Text & "%'"
         loaddtg(DataGridView2, sql)
 
 
@@ -112,44 +110,27 @@ Public Class SearchForm
 
 
     Private Sub Btndelete_Click(sender As Object, e As EventArgs) Handles btndelete.Click
-        'MsgBox(id)
+        Try
+            con.Open()
+
+            sql = "DELETE FROM petition_record WHERE petition_id = '" & id & "'"
+            With cmd
+                .CommandText = sql
+                .Connection = con
+                Dim result = .ExecuteNonQuery
 
 
-        If MsgBox("Are You Sure?", MsgBoxStyle.Critical + MsgBoxStyle.YesNo, "Warning") = MsgBoxResult.Yes Then
-            Try
-                con.Open()
+            End With
 
-                sql = "DELETE FROM petition_record WHERE petition_id = '" & id & "'"
-                With cmd
-                    .CommandText = sql
-                    .Connection = con
-                    Dim result = .ExecuteNonQuery
-
-
-
-                    If result > 0 Then
-                        MsgBox("Record Deleted", MsgBoxStyle.Information, "Deleted")
-
-                    Else
-                        MsgBox("Record Cannot be Deleted", MsgBoxStyle.Information, "Delete Failed")
-                    End If
-
-                End With
-
-            Catch ex As Exception
-                MsgBox(ex.Message)
-
-            End Try
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
             con.Close()
-            Call SearchForm_Load(sender, e)
-
-            Exit Sub
-        Else
-            Me.Refresh()
-        End If
+        End Try
 
 
-
+        Call SearchForm_Load(sender, e)
+        Me.Refresh()
 
     End Sub
 
@@ -217,6 +198,17 @@ Public Class SearchForm
         With type_of_cert
             .ShowDialog()
         End With
+
+    End Sub
+
+    Private Sub txtSearch_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+        sql = "SELECT petition_id, concat(petition_label, '-', petition_num, '-', year)as petition, ra, UPPER(doc_owner) AS doc_owner, UPPER(gender) AS gender, UPPER(name_of_petitioner) AS name_of_petitioner, UPPER(type_doc) AS type_doc,UPPER(municipality) AS municipality, UPPER(province) AS province, UPPER(CONCAT_WS(', ', nullif(certificate, ''), nullif(certificate_2, ''), nullif(certificate_3, ''))) AS certificate, year_final 
+            FROM petition_record WHERE (concat(petition_label, '-', petition_num, '-', year) LIKE '%" & txtSearch.Text & "%'   OR doc_owner LIKE '%" & txtSearch.Text & "%' 
+            OR gender LIKE '%" & txtSearch.Text & "%' OR name_of_petitioner LIKE '%" & txtSearch.Text & "%' OR type_doc LIKE '%" & txtSearch.Text & "%' OR municipality LIKE '%" & txtSearch.Text & "%' 
+            OR province LIKE '%" & txtSearch.Text & "%' OR certificate LIKE '%" & txtSearch.Text & "%' OR ra LIKE '%" & txtSearch.Text & "%')  AND (type_doc = '" & type.Trim & "') AND (petition_label LIKE '%" & pet_num & "%') ORDER BY petition_id DESC"
+
+        loaddtg(DataGridView2, sql)
+
 
     End Sub
 End Class
